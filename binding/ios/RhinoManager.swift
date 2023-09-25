@@ -142,7 +142,9 @@ public class RhinoManager {
         } catch {
             throw RhinoError(error.localizedDescription)
         }
-        isListening = true
+        isListening = false
+        print(isListening)
+        print("check")
     }
 
     private func stop() throws {
